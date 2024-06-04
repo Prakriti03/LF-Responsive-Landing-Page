@@ -390,7 +390,7 @@ hr{
     left: 16px;
 }
 .section__superscript p{
-    color: black;
+    color: var(--secondary-color);
 }
 .section__img{
     height: 280px;
