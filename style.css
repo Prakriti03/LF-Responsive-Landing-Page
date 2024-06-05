@@ -51,10 +51,7 @@ html {
 .header__logo:hover {
   cursor: pointer;
 }
-.hero__profile-description u {
-  color: var(--url-color);
-}
-.header__nav-item:hover {
+.hero__profile-description .header__nav-item:hover {
   cursor: pointer;
 }
 .hero__footer i:hover {
@@ -74,6 +71,9 @@ button:hover {
   line-height: 36px;
   letter-spacing: 1px;
   text-align: center;
+  p {
+    display: none;
+  }
 }
 .header__nav-item {
   font-size: 1.6rem;
@@ -81,9 +81,6 @@ button:hover {
   line-height: 36px;
 }
 
-.header__logo p {
-  display: none;
-}
 .header__nav-item--hidden {
   display: none;
 }
@@ -130,10 +127,13 @@ button:hover {
   text-align: center;
   margin: 0 2.5rem 2.9rem;
   margin-top: 16px;
+
+  u {
+    color: var(--url-color);
+  }
+ 
 }
-.hero__profile-description p {
-  color: var(--text-color);
-}
+
 .container__topic {
   font-weight: 800;
   font-size: 2.4rem;
@@ -203,9 +203,7 @@ button:hover {
   margin: 2.6rem 2.4rem 3.6rem 2.4rem;
 }
 
-.section_description p {
-  color: var(--text-color);
-}
+
 
 .section_icons {
   padding-top: 2px;
@@ -231,9 +229,7 @@ button:hover {
   text-align: center;
   align-content: center;
 }
-.section__logo img {
-  background: none;
-}
+
 h2 {
   font-size: 2.4rem;
   font-weight: 700;
@@ -250,30 +246,30 @@ h2 {
 .section__items {
   display: flex;
   flex-direction: column;
+  h3 {
+    margin-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 41.44px;
+    letter-spacing: 0.005em;
+  }
 }
 .section__item {
   padding-bottom: 30px;
+  p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 26.66px;
+    letter-spacing: 0.005em;
+    color: var(--text-color);
+  }
 }
-.section__items h3 {
-  margin-top: 8px;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 41.44px;
-  letter-spacing: 0.005em;
-  text-align: left;
-}
+
 .section__item__img--primary {
   position: relative;
   z-index: 2;
 }
-.section__item p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 26.66px;
-  letter-spacing: 0.005em;
-  text-align: left;
-  color: var(--text-color);
-}
+
 hr {
   margin-bottom: 30px;
   border-top: 1px solid #6f7279;
@@ -336,10 +332,11 @@ hr {
   position: absolute;
   top: 16px;
   left: 16px;
+  p {
+    color: var(--secondary-color);
+  }
 }
-.section__superscript p {
-  color: var(--secondary-color);
-}
+
 .section__img {
   height: 280px;
   object-fit: cover;
@@ -354,17 +351,18 @@ h4 {
   line-height: 24px;
   margin-bottom: 16px;
 }
-footer p {
-  font-size: 1.4rem;
-  line-height: 26.66px;
-  color: rgba(44, 44, 46, 1);
-}
+
 .footer__icons {
   display: flex;
   gap: 40px;
 }
 .footer {
   padding: 26px;
+  p {
+    font-size: 1.4rem;
+    line-height: 26.66px;
+    color: rgba(44, 44, 46, 1);
+  }
 }
 .fa-custom-size {
   font-size: 24px;
@@ -379,11 +377,10 @@ footer p {
   justify-content: center;
   gap: 40px;
 }
-.footer__text p {
-  color: var(--text-color);
-}
-.hero__profile-description a {
-  color: #3040e5;
+.footer__text {
+  p {
+    color: var(--text-color);
+  }
 }
 
 @media (min-width: 1054px) {
@@ -400,8 +397,10 @@ footer p {
     justify-content: center;
     margin-top: 56px;
   }
-  .header__logo p {
-    display: flex;
+  .header__logo {
+    p {
+      display: flex;
+    }
   }
   #hero__profile-img {
     width: 4.44%;
@@ -464,7 +463,6 @@ footer p {
   .section-container {
     padding: 81px 146px;
     background-color: var(--tertiary-color);
-    
   }
 
   .section__superscript {
@@ -480,10 +478,10 @@ footer p {
     display: flex;
     flex-direction: row-reverse;
   }
-  .section__subsection--img{
+  .section__subsection--img {
     width: 40%;
   }
-  .section__subsection--text{
+  .section__subsection--text {
     width: 60%;
   }
   #logo-small {
@@ -502,28 +500,28 @@ footer p {
   .section__item {
     width: 30%;
     padding-bottom: 46px;
+    p {
+      font-size: 1.6rem;
+      line-height: 30.46px;
+    }
   }
   .section__items {
     margin-left: 151px;
     margin-right: 146px;
     padding: 0;
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 41.44px;
+      letter-spacing: 0.005em;
+      margin-top: 14px;
+      margin-bottom: 10px;
+    }
   }
   .section__heading--lasttopic {
     margin-bottom: 62px;
   }
 
-  .section__item p {
-    font-size: 1.6rem;
-    line-height: 30.46px;
-  }
-  .section__items h3 {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 41.44px;
-    letter-spacing: 0.005em;
-    margin-top: 14px;
-    margin-bottom: 10px;
-  }
   .footer__description {
     flex-direction: row;
     justify-content: space-between;
@@ -531,11 +529,13 @@ footer p {
   .footer {
     padding: 39px 151px;
   }
-  .footer__text p {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 31.08px;
-    letter-spacing: 0.01em;
+  .footer__text {
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 31.08px;
+      letter-spacing: 0.01em;
+    }
   }
   h4 {
     font-size: 4rem;
@@ -554,14 +554,14 @@ footer p {
   .header {
     padding: 24px 146px;
   }
-  .section__items-flex::after{
+  .section__items-flex::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: #6F7279;
+    background-color: #6f7279;
     top: 45%;
-    }
+  }
 }
 @media (min-width: 768px) and (max-width: 1054px) {
   .header__nav-item--hidden {
@@ -577,8 +577,10 @@ footer p {
     justify-content: center;
     margin-top: 56px;
   }
-  .header__logo p {
-    display: flex;
+  .header__logo {
+    p {
+      display: flex;
+    }
   }
   #hero__profile-img {
     width: 4.44%;
@@ -623,27 +625,31 @@ footer p {
   .footer__description {
     gap: 0px;
   }
-  .section_description p{
-    font-size: 1.8rem;
+  .section_description {
+    p {
+      font-size: 1.8rem;
+    }
   }
-  h2{
+  h2 {
     font-size: 3rem;
   }
-  .section__subsection--text{
-   margin: 30px;
+  .section__subsection--text {
+    margin: 30px;
   }
-  h4{
+  h4 {
     font-size: 2.8rem;
   }
-  .section__items h3{
-    font-size: 2.2rem;
+  .section__items {
+    h3 {
+      font-size: 2.2rem;
+    }
   }
-  .section__item p{
-    font-size: 1.8rem;
+  .section__item {
+    p {
+      font-size: 1.8rem;
+    }
   }
-  .section__items-flex{
+  .section__items-flex {
     margin: 0 30px;
   }
-  
- 
 }
