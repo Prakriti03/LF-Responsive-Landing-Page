@@ -1,295 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Responsive Landing Page</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header__logo">
-                <img src="Images/Union.svg" alt="logo">
-                <p>BISCUIT</p>
+      <header class="header">
+        <div class="header__logo">
+          <img src="Images/Union.svg" alt="logo" />
+          <p>BISCUIT</p>
+        </div>
+        <div class="header__nav-bar">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--hidden">
+              <span>About</span>
+            </li>
+            <li class="header__nav-item header__nav-item--hidden">
+              <span>Work</span>
+            </li>
+            <li class="header__nav-item header__nav-item--hidden">
+              <span>Contact</span>
+            </li>
+            <li class="header__nav-item header__nav-item--btn">
+              <img src="Images/emoji.png" alt="emoji" id="mode-btn" />
+            </li>
+            <li class="header__menu">
+              <p class="">MENU</p>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__profile-section">
+            <div class="hero__profile-header">
+              <img
+                id="hero__profile-img"
+                src="Images/profile.svg"
+                alt="profile picture"
+              />
+              <p class="hero__profile-header hero__profile-header--primary">
+                Hi, I’m Nanang Prasetya
+              </p>
+              <p class="hero__profile-header hero__profile-header--secondary">
+                UI/UX Designer and <br />
+                Software Development
+              </p>
             </div>
-            <div class="header__nav-bar">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item header__nav-item--hidden">
-                        <span>About</span>
-                    </li>
-                    <li class="header__nav-item header__nav-item--hidden">
-                        <span>Work</span>
-                    </li>
-                    <li class="header__nav-item header__nav-item--hidden">
-                        <span>Contact</span>
-                    </li>
-                    <li class="header__nav-item header__nav-item--btn">
-                        <img src="Images/emoji.png" alt="emoji" id="mode-btn">
-                        
-                    </li>
-                    <li class="header__menu">
-                        <p class="">MENU</p>
-                    </li>
-                </ul>
+            <div class="hero__profile-description">
+              <p>
+                I’m from Indonesia and I have been working (Freelance) as a
+                Software Development especially in the UI/UX Designer and
+                Development for more than 2 year at
+                <a href=""><u>Panemu Indonesia</u></a> company.
+              </p>
             </div>
-        </header>
-        <main class="main">
-            <section class="hero">
-                <div class="hero__profile-section">
-                    <div class="hero__profile-header">
-                        <img id = "hero__profile-img" src="Images/profile.svg" alt="profile picture">
-                        <p class="hero__profile-header hero__profile-header--primary ">Hi, I’m Nanang Prasetya</p>
-                        <p class="hero__profile-header hero__profile-header--secondary">UI/UX Designer and <br>
-                            Software Development</p>
-                    </div>
-                    <div class="hero__profile-description">
-                        
-                        <p>I’m from Indonesia and I have been working (Freelance) as a Software Development especially in the UI/UX Designer and Development for more than 2 year at <a href="" ><u>Panemu Indonesia</u></a> company.</p>
-                    </div>
-                </div>
-                <div class="hero__clickable">
-                    <div>
-                        <button class="hero__clickable--primary">
-                            SAY HELLO
-                        </button>
-                    </div>
-                    <div class="hero__clickable--secondary">
-                        
-                        <img src="Images/download.png" alt="download" id="download-btn">
-                        <p>Download CV</p>
-                    </div>
-                </div>
-                <div class="hero__footer">
-                    
-                    <i class="fa-brands fa-linkedin-in fa-custom-size" 
-                    aria-hidden="true"></i>
-                    <i class="fa-brands fa-instagram fa-custom-size"></i>
-                    <i class="fa-solid fa-basketball fa-custom-size"></i>
-                    <i class="fa-brands fa-github fa-custom-size"></i>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="section__subsection">
-                    <img class="section__img" src="Images/tuku ternak 1.png" alt="tukuk">
-                </div>
-                <div class="section__subsection">
-                    <div class="section__superscript">
-                            <img src="Images/shop.png" alt="market" >
-                            <p>Marketplace</p>
-                        </div>
-                    <div class="section__heading">
-                        <div class="section__logo">
-                            <img src="Images/tuktuk.png" 
-                            alt="tukuk" id = "logo-small">
-                        </div>
-                        
-                        <h2>Tuku Ternak</h2>
-                    </div>
-                    
-                    <div class="section_description">
-                        <p>Tuku Ternak is an application that is engaged in animal husbandry e-commerce (selling various livestock products) that applies business concepts and empowerment of breeders and MSMEs.</p>
-                    </div>
-                    <div class="section_icons">
-                        <img src="Images/icon-1.png" alt="icon1">
-                        <img src="Images/icon-2.png" alt="icon2">
-                        <img src="Images/icon-3.png" alt="icon3">
-                        <img src="Images/icon-4.png" alt="icon4">
-                        <img src="Images/icon-5.png" alt="icon5">
-                        <img src="Images/icon-6.png" alt="icon6">
-                    </div>
-                    <div id="studycase-button">
-                        
-                        <button class="button">
-                            STUDY CASE
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="section__subsection">
-                    <img class="section__img" src="Images/event-main.png" alt="tukuk">
-                </div>
-                <div class="section__subsection">
-                    <div class="section__superscript">
-                            <img src="Images/ticket.png" alt="market">
-                            <p>Ticketing</p>
-                        </div>
-                    <div class="section__heading">
-                        <div class="section__item__img">
-                            <img src="Images/ticket.png" 
-                            alt="tukuk">
-                        </div>
-                        
-                        <h2>Event Id</h2>
-                    </div>
-                    
-                    <div class="section_description">
-                        <p>Event Id is a Ticketing Management Service (TMS) superior technology in supporting all event organizers from distribution & ticket management, to providing event analysis reports at the end of the event.</p>
-                    </div>
-                    <div class="section_icons section_icons--secondary">
-                        <img src="Images/icon-1.png" alt="icon1">
-                        <img src="Images/icon-2.png" alt="icon2">
-                        <img src="Images/icon-3.png" alt="icon3">
-                    </div>
-                    <div id="studycase-button">
-                        
-                        <button class="button">
-                            STUDY CASE
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section-container">
-                <div class="section__subsection section__subsection--img">
-                    <img class="section__img" src="Images/health.png" alt="tukuk">
-                </div>
-                <div class="section__subsection section__subsection--text">
-                    <div class="section__superscript">
-                            <img src="Images/health-icon.png" alt="market">
-                            <p>Health</p>
-                        </div>
-                    <div class="section__heading">
-                        <div class="section__item__img">
-                            <img src="Images/medica.png" 
-                            alt="tukuk">
-                        </div>
-                        
-                        <h2>Medica</h2>
-                    </div>
-                    
-                    <div class="section_description">
-                        <p>Medica is the Web Desgin for Commercial and Residential Room Disinfection, Decontamination Services Eliminating 99.999% of bacteria, viruses,  spores using international standard products.</p>
-                    </div>
-                    <div class="section_icons section_icons--secondary">
-                        <img src="Images/icon-1.png" alt="icon1">
-                        <img src="Images/icon-2.png" alt="icon2">
-                        <img src="Images/icon-3.png" alt="icon3">
-                    </div>
-                    <div id="studycase-button">
-                        
-                        <button class="button">
-                            STUDY CASE
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <div class="section__lasttopic">
-
-                    <div class="section__heading section__heading--lasttopic">
-                        <h2>Applications and Tools</h2>
-                    </div>
-                   
-                    
-                    <div class="section__items">
-                        <div class="section__items-flex">
-    
-                            <div class="section__item">
-                                <div class="section__item__img">
-                                    <img src="Images/app-1.png" alt="figma">
-                                </div>
-                               
-                                <h3>Figma</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                            <hr>
-                            <div class="section__item">
-                                <div class="section__item__img">
-                                    <img src="Images/app-2.png" alt="Whimsical">
-                                </div>
-                                <h3>Whimsical</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                            <hr>
-                            <div class="section__item">
-                                <div class="section__item__img">
-                                    <img src="Images/app-3.png" alt="Invision">
-                                </div>
-                                <h3>Invision</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                            <hr>
-                            <div class="section__item">
-                                <div class="section__item__img">
-                                    <img src="Images/app-4.png" alt="flutter">
-                                </div>
-                                <h3>Flutter</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                            <hr>
-                            <div class="section__item">
-                                <div class="section__item__img">
-                                    <img src="Images/app-5.png" alt="VS Code">
-                                </div>
-                                <h3>VS Code</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                            <hr>
-                            <div class="section__item">
-                                <div class="section__image">
-                                    <div class="section__item__img section__item__img--primary">
-            
-                                        <img src="Images/app-6.png" alt="git">
-                                    </div>
-                                    <div class="section__item__img section__item__img--secondary">
-                                        <img src="Images/app-7.png" alt="git">
-                                    </div>
-                                </div>
-                                
-                                
-                               
-                               
-                                <h3>Git</h3>
-                                <p>My primary design tool right now. Saya memilih mengunakan figma karena dapat bekerja dengan Tim.</p>
-                            </div>
-                        </div>
-                        <div class="button_container">
-        
-                            <button class="button--load">
-                                <b>Load More Applicaton and Tools</b>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
-        </main>
-        <footer >
-            <div class="footer">
-                <div class="footer__description">
-                    <div class="footer__text">
-
-                        <h4>Let's get in touch</h4>
-                        <p>For business inquiry please send email to nanangprasetya.2000@gmail.com</p>
-                    </div>
-                    <div class="footer__button">
-
-                        <button class="hero__clickable hero__clickable--primary">
-                            SAY HELLO
-                        </button>
-                    </div>
-    
-                </div>
-                <div class="footer__icons">
-                    <i class="fa-brands fa-linkedin-in fa-custom-size" 
-                        aria-hidden="true"></i>
-                    <i class="fa-brands fa-instagram fa-custom-size"></i>
-                    <i class="fa-solid fa-basketball fa-custom-size"></i>
-                    <i class="fa-brands fa-github fa-custom-size"></i>
-                </div>
+          </div>
+          <div class="hero__clickable">
+            <div>
+              <button class="hero__clickable--primary">SAY HELLO</button>
             </div>
-            
-            
+            <div class="hero__clickable--secondary">
+              <img src="Images/download.png" alt="download" id="download-btn" />
+              <p>Download CV</p>
+            </div>
+          </div>
+          <div class="hero__footer">
+            <i
+              class="fa-brands fa-linkedin-in fa-custom-size"
+              aria-hidden="true"
+            ></i>
+            <i class="fa-brands fa-instagram fa-custom-size"></i>
+            <i class="fa-solid fa-basketball fa-custom-size"></i>
+            <i class="fa-brands fa-github fa-custom-size"></i>
+          </div>
+        </section>
+        <section class="section-container">
+          <div class="section__subsection">
+            <img
+              class="section__img"
+              src="Images/tuku ternak 1.png"
+              alt="tukuk"
+            />
+          </div>
+          <div class="section__subsection">
+            <div class="section__superscript">
+              <img src="Images/shop.png" alt="market" />
+              <p>Marketplace</p>
+            </div>
+            <div class="section__heading">
+              <div class="section__logo">
+                <img src="Images/tuktuk.png" alt="tukuk" id="logo-small" />
+              </div>
 
-        </footer>
+              <h2>Tuku Ternak</h2>
+            </div>
+
+            <div class="section_description">
+              <p>
+                Tuku Ternak is an application that is engaged in animal
+                husbandry e-commerce (selling various livestock products) that
+                applies business concepts and empowerment of breeders and MSMEs.
+              </p>
+            </div>
+            <div class="section_icons">
+              <img src="Images/icon-1.png" alt="icon1" />
+              <img src="Images/icon-2.png" alt="icon2" />
+              <img src="Images/icon-3.png" alt="icon3" />
+              <img src="Images/icon-4.png" alt="icon4" />
+              <img src="Images/icon-5.png" alt="icon5" />
+              <img src="Images/icon-6.png" alt="icon6" />
+            </div>
+            <div id="studycase-button">
+              <button class="button">STUDY CASE</button>
+            </div>
+          </div>
+        </section>
+        <section class="section-container">
+          <div class="section__subsection">
+            <img class="section__img" src="Images/event-main.png" alt="tukuk" />
+          </div>
+          <div class="section__subsection">
+            <div class="section__superscript">
+              <img src="Images/ticket.png" alt="market" />
+              <p>Ticketing</p>
+            </div>
+            <div class="section__heading">
+              <div class="section__item__img">
+                <img src="Images/ticket.png" alt="tukuk" />
+              </div>
+
+              <h2>Event Id</h2>
+            </div>
+
+            <div class="section_description">
+              <p>
+                Event Id is a Ticketing Management Service (TMS) superior
+                technology in supporting all event organizers from distribution
+                & ticket management, to providing event analysis reports at the
+                end of the event.
+              </p>
+            </div>
+            <div class="section_icons section_icons--secondary">
+              <img src="Images/icon-1.png" alt="icon1" />
+              <img src="Images/icon-2.png" alt="icon2" />
+              <img src="Images/icon-3.png" alt="icon3" />
+            </div>
+            <div id="studycase-button">
+              <button class="button">STUDY CASE</button>
+            </div>
+          </div>
+        </section>
+        <section class="section-container">
+          <div class="section__subsection section__subsection--img">
+            <img class="section__img" src="Images/health.png" alt="tukuk" />
+          </div>
+          <div class="section__subsection section__subsection--text">
+            <div class="section__superscript">
+              <img src="Images/health-icon.png" alt="market" />
+              <p>Health</p>
+            </div>
+            <div class="section__heading">
+              <div class="section__item__img">
+                <img src="Images/medica.png" alt="tukuk" />
+              </div>
+
+              <h2>Medica</h2>
+            </div>
+
+            <div class="section_description">
+              <p>
+                Medica is the Web Desgin for Commercial and Residential Room
+                Disinfection, Decontamination Services Eliminating 99.999% of
+                bacteria, viruses, spores using international standard products.
+              </p>
+            </div>
+            <div class="section_icons section_icons--secondary">
+              <img src="Images/icon-1.png" alt="icon1" />
+              <img src="Images/icon-2.png" alt="icon2" />
+              <img src="Images/icon-3.png" alt="icon3" />
+            </div>
+            <div id="studycase-button">
+              <button class="button">STUDY CASE</button>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__lasttopic">
+            <div class="section__heading section__heading--lasttopic">
+              <h2>Applications and Tools</h2>
+            </div>
+
+            <div class="section__items">
+              <div class="section__items-flex">
+                <div class="section__item">
+                  <div class="section__item__img">
+                    <img src="Images/app-1.png" alt="figma" />
+                  </div>
+
+                  <h3>Figma</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+                <hr />
+                <div class="section__item">
+                  <div class="section__item__img">
+                    <img src="Images/app-2.png" alt="Whimsical" />
+                  </div>
+                  <h3>Whimsical</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+                <hr />
+                <div class="section__item">
+                  <div class="section__item__img">
+                    <img src="Images/app-3.png" alt="Invision" />
+                  </div>
+                  <h3>Invision</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+                <hr />
+                <div class="section__item">
+                  <div class="section__item__img">
+                    <img src="Images/app-4.png" alt="flutter" />
+                  </div>
+                  <h3>Flutter</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+                <hr />
+                <div class="section__item">
+                  <div class="section__item__img">
+                    <img src="Images/app-5.png" alt="VS Code" />
+                  </div>
+                  <h3>VS Code</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+                <hr />
+                <div class="section__item">
+                  <div class="section__image">
+                    <div class="section__item__img section__item__img--primary">
+                      <img src="Images/app-6.png" alt="git" />
+                    </div>
+                    <div
+                      class="section__item__img section__item__img--secondary"
+                    >
+                      <img src="Images/app-7.png" alt="git" />
+                    </div>
+                  </div>
+
+                  <h3>Git</h3>
+                  <p>
+                    My primary design tool right now. Saya memilih mengunakan
+                    figma karena dapat bekerja dengan Tim.
+                  </p>
+                </div>
+              </div>
+              <div class="button_container">
+                <button class="button--load">
+                  <b>Load More Applicaton and Tools</b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <div class="footer__description">
+            <div class="footer__text">
+              <h4>Let's get in touch</h4>
+              <p>
+                For business inquiry please send email to
+                nanangprasetya.2000@gmail.com
+              </p>
+            </div>
+            <div class="footer__button">
+              <button class="hero__clickable hero__clickable--primary">
+                SAY HELLO
+              </button>
+            </div>
+          </div>
+          <div class="footer__icons">
+            <i
+              class="fa-brands fa-linkedin-in fa-custom-size"
+              aria-hidden="true"
+            ></i>
+            <i class="fa-brands fa-instagram fa-custom-size"></i>
+            <i class="fa-solid fa-basketball fa-custom-size"></i>
+            <i class="fa-brands fa-github fa-custom-size"></i>
+          </div>
+        </div>
+      </footer>
     </div>
-   
-    <script src="script.js"></script>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
