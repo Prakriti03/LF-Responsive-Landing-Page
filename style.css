@@ -34,6 +34,12 @@ html {
   --button-color: #f2f2f7;
   --url-color: #6572f9;
 }
+.normal-font {   
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 26.66px;
+} 
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -48,21 +54,14 @@ html {
   display: flex;
   align-self: center;
 }
-.header__logo:hover {
+.header__logo:hover,.header__nav-item:hover, .hero__footer i:hover, #download-btn:hover, button:hover {
   cursor: pointer;
 }
-.hero__profile-description .header__nav-item:hover {
-  cursor: pointer;
+
+button:hover, .hero__footer i:hover, .header__nav-item:hover{
+  scale: 1.1;
 }
-.hero__footer i:hover {
-  cursor: pointer;
-}
-#download-btn:hover {
-  cursor: pointer;
-}
-button:hover {
-  cursor: pointer;
-}
+
 .header__logo {
   display: flex;
   gap: 12px;
@@ -109,7 +108,6 @@ button:hover {
   text-align: center;
   padding: 0.28em 1.14em;
   border-radius: 37.18% / 103.57%;
-  font-size: 1.4rem;
   background-color: var(--tertiary-color);
 }
 
@@ -121,9 +119,6 @@ button:hover {
   text-align: center;
 }
 .hero__profile-description {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 26.66px;
   text-align: center;
   margin: 0 2.5rem 2.9rem;
   margin-top: 16px;
@@ -154,15 +149,12 @@ button:hover {
   background-color: #3040e5;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 500;
   border: none;
   text-align: center;
   height: 40px;
   width: 167px;
   border-radius: 66px;
   display: inline-block;
-  line-height: 20.54px;
 }
 .hero__clickable--secondary {
   font-family: "Roboto", sans-serif;
@@ -197,8 +189,6 @@ button:hover {
   height: 29px;
 }
 .section_description {
-  font-size: 1.4rem;
-  line-height: 2.6rem;
   text-align: left;
   margin: 2.6rem 2.4rem 3.6rem 2.4rem;
 }
@@ -279,8 +269,9 @@ hr {
   border-radius: 70px;
   width: 68px;
   height: 68px;
-  align-content: center;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .section__image {
@@ -327,8 +318,6 @@ hr {
   border-radius: 32px;
   padding: 8px 14px;
   align-items: center;
-  font-size: 1.4rem;
-  font-weight: 500;
   position: absolute;
   top: 16px;
   left: 16px;
@@ -355,7 +344,12 @@ h4 {
 .footer__icons {
   display: flex;
   gap: 40px;
+  i:hover{
+    cursor: pointer;
+  }
+ 
 }
+
 .footer {
   padding: 26px;
   p {

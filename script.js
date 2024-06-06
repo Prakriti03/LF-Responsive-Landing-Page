@@ -3,14 +3,14 @@ var darkMode = localStorage.getItem("darkMode");
 const parentListEl = document.querySelector(".header__nav-item");
 const downloadBtn = document.getElementById("download-btn");
 
-const enableDarkMode = () => {
+const enableLightMode = () => {
   btn.src = "Images/emoji.png";
   downloadBtn.src = "Images/download.png";
   document.body.classList.add("light-theme");
   localStorage.setItem("darkMode", "enabled");
 };
 
-const disableDarkMode = () => {
+const disableLightMode = () => {
   btn.src = "Images/emoji-light.png";
   downloadBtn.src = "Images/download_dark.png";
   document.body.classList.remove("light-theme");
@@ -18,16 +18,16 @@ const disableDarkMode = () => {
 };
 
 if (darkMode === "enabled") {
-  enableDarkMode();
+  enableLightMode();
 } else {
-  disableDarkMode();
+  disableLightMode();
 }
 
 btn.addEventListener("click", () => {
   darkMode = localStorage.getItem("darkMode");
   if (darkMode !== "enabled") {
-    enableDarkMode();
+    enableLightMode();
   } else {
-    disableDarkMode();
+    disableLightMode();
   }
 });
